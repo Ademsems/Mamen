@@ -5,7 +5,10 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["scontent.cdninstagram.com", "video.cdninstagram.com"],
+    remotePatterns: [
+      { protocol: "https", hostname: "scontent.cdninstagram.com" },
+      { protocol: "https", hostname: "video.cdninstagram.com" },
+    ],
   },
 };
 
