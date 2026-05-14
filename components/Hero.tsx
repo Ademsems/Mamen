@@ -102,10 +102,14 @@ export default function Hero() {
               />
             </div>
 
-            {/* Secondary photo placeholder */}
-            <div className="relative aspect-video w-full max-w-sm mx-auto lg:mx-0 bg-border/50 flex items-center justify-center overflow-hidden">
-              {/* TODO: Replace with <Image src="/images/mamen-secondary.jpg" alt="Mamen Sala reporting" fill className="object-cover" /> */}
-              <p className="font-serif italic text-sm text-secondary-text">[ {t("photo_secondary")} ]</p>
+            {/* Secondary photo */}
+            <div className="relative w-full aspect-video overflow-hidden rounded-sm">
+              <Image
+                src="/images/secondary.jpg"
+                alt="Mamen Sala reporting"
+                fill
+                className="object-cover object-top"
+              />
             </div>
           </motion.div>
         </div>
