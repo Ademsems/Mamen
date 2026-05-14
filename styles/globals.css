@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F5F2EE;
+  --surface: #FFFFFF;
+  --primary-text: #1A1A1A;
+  --secondary-text: #6B6B6B;
+  --accent: #8B6F47;
+  --border: #E0DAD3;
+  --footer-bg: #1A1A1A;
+  --footer-text: #F5F2EE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+@layer components {
+  .nav-link {
+    @apply relative text-sm font-medium text-primary-text transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-[1px] bg-accent transition-all duration-200;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    @apply text-accent;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold tracking-[0.2em] uppercase text-accent;
+  }
+
+  .editorial-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-primary-text leading-tight;
+  }
+
+  .card-hover {
+    @apply transition-all duration-150 ease-in-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    @apply shadow-lg;
+  }
+}

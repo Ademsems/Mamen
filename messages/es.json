@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "articles": "Artículos",
+    "instagram": "Instagram",
+    "recommendations": "Recomendaciones",
+    "cv": "CV",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "CORRESPONSAL EN EE.UU. · NUEVA YORK",
+    "headline": "Mamen Sala",
+    "subtitle": "Presentadora · Reportera · Criminóloga · Empresaria",
+    "bio": "Cubriendo América para Mediaset España y France 24. Basada en Nueva York.",
+    "cta_work": "Ver mi trabajo →",
+    "cta_contact": "Contactar",
+    "photo_placeholder": "Foto próximamente",
+    "photo_secondary": "Foto secundaria"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "pull_quote": "14 años de periodismo.\nDe Madrid a Manhattan.",
+    "bio": "Mamen Sala es corresponsal en Estados Unidos para Mediaset España (Telecinco y Cuatro) y France 24 en español, informando desde Nueva York sobre política, economía, sociedad y deportes. Con más de 14 años de experiencia en periodismo audiovisual, domina la retransmisión en directo, el reportaje de investigación, la producción de vídeo y la cobertura sobre el terreno en dos continentes.\n\nMás allá de los medios, Mamen es cofundadora y presidenta de Chef Training U.S., empresa que conecta empleadores del sector de la hostelería en Miami y Nueva York con talento internacional. También ejerce como profesora asociada de Periodismo en la Universitat Oberta de Catalunya.\n\nEs licenciada en Comunicación, Criminología y Derecho por la Universitat Internacional de Catalunya y la Universitat Oberta de Catalunya, y tiene un máster en Marketing por la UCLA."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "present": "Presente"
+  },
+  "articles": {
+    "title": "Trabajo Destacado",
+    "read_more": "Leer artículo →"
+  },
+  "instagram": {
+    "title": "Sobre el Terreno",
+    "subtitle": "Sígueme @mamensala",
+    "follow": "Seguir en Instagram →",
+    "coming_soon": "Feed de Instagram próximamente — @mamensala"
+  },
+  "recommendations": {
+    "title": "Lo Que Dicen",
+    "view_linkedin": "Ver en LinkedIn →",
+    "spanish_label": "(Español)"
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "skills_title": "Competencias",
+    "education_title": "Educación",
+    "languages_title": "Idiomas",
+    "download": "Descargar CV completo"
+  },
+  "contact": {
+    "title": "Contacto",
+    "message": "Si eres un medio buscando corresponsal en EE.UU., una marca que busca una comunicadora multilingüe, o simplemente quieres conectar — escríbeme.",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message_field": "Mensaje",
+    "send": "Enviar mensaje",
+    "success": "Gracias — me pondré en contacto pronto.",
+    "error_required": "Por favor, completa todos los campos obligatorios."
+  },
+  "footer": {
+    "location": "Nueva York, NY",
+    "copyright": "© 2025 Mamen Sala. Todos los derechos reservados."
+  }
+}

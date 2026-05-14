@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "articles": "Articles",
+    "instagram": "Instagram",
+    "recommendations": "Recommendations",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "US CORRESPONDENT · NEW YORK",
+    "headline": "Mamen Sala",
+    "subtitle": "TV Anchor · Reporter · Criminologist · Entrepreneur",
+    "bio": "Covering America for Mediaset España and France 24. Based in New York.",
+    "cta_work": "Read My Work →",
+    "cta_contact": "Get in Touch",
+    "photo_placeholder": "Photo coming soon",
+    "photo_secondary": "Secondary photo"
+  },
+  "about": {
+    "title": "About",
+    "pull_quote": "14 years of journalism.\nFrom Madrid to Manhattan.",
+    "bio": "Mamen Sala is a U.S. correspondent for Mediaset España (Telecinco & Cuatro) and France 24 Spanish, reporting from New York on politics, economics, society, and sports. With over 14 years of experience in audiovisual journalism, she brings expertise in live broadcasting, investigative reporting, video production, and field coverage across two continents.\n\nBeyond the newsroom, Mamen is the co-founder and President of Chef Training U.S., a company connecting hospitality employers in Miami and New York with international talent. She also serves as an Adjunct Professor of Journalism at the Universitat Oberta de Catalunya.\n\nShe holds degrees in Mass Communication, Criminology, and Law from the Universitat Internacional de Catalunya and the Universitat Oberta de Catalunya, and a Master's in Marketing from UCLA."
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present"
+  },
+  "articles": {
+    "title": "Featured Work",
+    "read_more": "Read Article →"
+  },
+  "instagram": {
+    "title": "On the Ground",
+    "subtitle": "Follow along @mamensala",
+    "follow": "Follow on Instagram →",
+    "coming_soon": "Instagram feed coming soon — @mamensala"
+  },
+  "recommendations": {
+    "title": "What People Say",
+    "view_linkedin": "View on LinkedIn →",
+    "spanish_label": "(Spanish)"
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "skills_title": "Skills",
+    "education_title": "Education",
+    "languages_title": "Languages",
+    "download": "Download Full CV"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "message": "Whether you're a media outlet looking for a US correspondent, a brand seeking a multilingual communicator, or simply want to connect — reach out.",
+    "name": "Full Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message_field": "Message",
+    "send": "Send Message",
+    "success": "Thank you — I'll be in touch soon.",
+    "error_required": "Please fill in all required fields."
+  },
+  "footer": {
+    "location": "New York, NY",
+    "copyright": "© 2025 Mamen Sala. All rights reserved."
+  }
+}

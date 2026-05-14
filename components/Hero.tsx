@@ -1,0 +1,131 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+export default function Hero() {
+  const t = useTranslations("hero");
+
+  return (
+    <section className="relative min-h-screen flex items-center bg-background overflow-hidden">
+      {/* Watermark */}
+      <div
+        className="pointer-events-none absolute inset-0 flex items-center justify-center select-none"
+        aria-hidden
+      >
+        <span
+          className="text-[clamp(8rem,25vw,22rem)] font-serif font-bold tracking-widest text-primary-text/[0.03] rotate-[-8deg] whitespace-nowrap"
+        >
+          JOURNALIST
+        </span>
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-7xl w-full px-6 pt-32 pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Text content */}
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col gap-5"
+          >
+            <motion.span variants={item} className="section-label">
+              {t("eyebrow")}
+            </motion.span>
+
+            <motion.h1
+              variants={item}
+              className="font-serif text-[clamp(3rem,7vw,5rem)] font-bold leading-none tracking-tight text-primary-text"
+            >
+              {t("headline")}
+            </motion.h1>
+
+            <motion.p
+              variants={item}
+              className="text-lg text-secondary-text font-light tracking-wide"
+            >
+              {t("subtitle")}
+            </motion.p>
+
+            <motion.p variants={item} className="text-base text-primary-text/80 max-w-md">
+              {t("bio")}
+            </motion.p>
+
+            <motion.div variants={item} className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="https://www.larazon.es/autores/mamen-sala/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
+              >
+                {t("cta_work")}
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 border border-primary-text text-primary-text px-6 py-3 text-sm font-medium tracking-wide hover:border-accent hover:text-accent transition-colors"
+              >
+                {t("cta_contact")}
+              </a>
+            </motion.div>
+          </motion.div>
+
+          {/* Photos */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            className="flex flex-col gap-4"
+          >
+            {/* Primary headshot placeholder */}
+            <div className="relative aspect-[3/4] w-full max-w-sm mx-auto lg:mx-0 bg-border flex items-center justify-center overflow-hidden">
+              <div className="text-center text-secondary-text">
+                <div className="w-16 h-16 border-2 border-dashed border-border rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-border" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                {/* TODO: Replace with <Image src="/images/mamen-headshot.jpg" alt="Mamen Sala" fill className="object-cover" /> */}
+                <p className="font-serif italic text-sm">[ {t("photo_placeholder")} ]</p>
+              </div>
+            </div>
+
+            {/* Secondary photo placeholder */}
+            <div className="relative aspect-video w-full max-w-sm mx-auto lg:mx-0 bg-border/50 flex items-center justify-center overflow-hidden">
+              {/* TODO: Replace with <Image src="/images/mamen-secondary.jpg" alt="Mamen Sala reporting" fill className="object-cover" /> */}
+              <p className="font-serif italic text-sm text-secondary-text">[ {t("photo_secondary")} ]</p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+      >
+        <span className="section-label text-[10px]">scroll</span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+          className="w-[1px] h-8 bg-accent/60"
+        />
+      </motion.div>
+    </section>
+  );
+}
