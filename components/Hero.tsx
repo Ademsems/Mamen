@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const container = {
   hidden: {},
@@ -90,17 +91,15 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="flex flex-col gap-4"
           >
-            {/* Primary headshot placeholder */}
-            <div className="relative aspect-[3/4] w-full max-w-sm mx-auto lg:mx-0 bg-border flex items-center justify-center overflow-hidden">
-              <div className="text-center text-secondary-text">
-                <div className="w-16 h-16 border-2 border-dashed border-border rounded-full mx-auto mb-3 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-border" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                {/* TODO: Replace with <Image src="/images/mamen-headshot.jpg" alt="Mamen Sala" fill className="object-cover" /> */}
-                <p className="font-serif italic text-sm">[ {t("photo_placeholder")} ]</p>
-              </div>
+            {/* Primary headshot */}
+            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-sm">
+              <Image
+                src="/images/hero.jpg"
+                alt="Mamen Sala — US Correspondent & Journalist"
+                fill
+                className="object-cover object-top"
+                priority
+              />
             </div>
 
             {/* Secondary photo placeholder */}
